@@ -37,3 +37,4 @@ The site files need to stay together: `index.html`, `styles.css`, `site-config.j
 ## Important before launch
 
 The public app build and the website should describe the same allowed use. Keep any private testing controls out of the customer release if they permit a use that the website says is unsupported. Review all third-party software licenses and include the required notices and source information with the Windows distribution.
+ 
