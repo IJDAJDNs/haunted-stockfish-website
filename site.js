@@ -102,37 +102,41 @@
   const feedbackForm = document.querySelector("[data-feedback-form]");
   const feedbackStatus = document.querySelector("[data-feedback-status]");
   if (feedbackForm && feedbackStatus) {
-    const recipient = String(config.supportEmail || "").trim();
-    const ready = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(recipient);
+    const endpoint = String(config.feedbackEndpoint || "").trim();
+    const ready = isHttpsUrl(endpoint);
     if (ready) {
-      feedbackStatus.textContent = "Your email app will open with a draft. Review it and press Send to submit; this website does not upload or store your report.";
+      feedbackStatus.textContent = "Your message is sent directly to the developer when you press the button.";
       feedbackStatus.classList.add("is-ready");
     }
-    feedbackForm.addEventListener("submit", (event) => {
+    feedbackForm.addEventListener("submit", async (event) => {
       event.preventDefault();
+      feedbackStatus.classList.remove("is-error", "is-ready");
       if (!ready) {
-        feedbackStatus.textContent = "Feedback is not connected yet. Add a valid inbox to supportEmail in site-config.js before publishing the form.";
+        feedbackStatus.textContent = "Feedback is not connected yet. Add a feedbackEndpoint URL in site-config.js before publishing the form.";
         feedbackStatus.classList.add("is-error");
         return;
       }
-      const values = new FormData(feedbackForm);
-      const type = String(values.get("type") || "Feedback").trim();
-      const title = String(values.get("subject") || "").trim();
-      const details = String(values.get("details") || "").trim();
-      const version = String(values.get("version") || "Not provided").trim();
-      const replyEmail = String(values.get("replyEmail") || "Not provided").trim();
-      const subject = `[Haunted Stockfish] ${type}: ${title}`;
-      const body = [
-        `Type: ${type}`,
-        `App version: ${version || "Not provided"}`,
-        `Reply email: ${replyEmail || "Not provided"}`,
-        "",
-        details,
-      ].join("\n");
-      feedbackStatus.textContent = "Your email app should open a draft now. Press Send there to submit your feedback.";
-      feedbackStatus.classList.remove("is-error");
-      feedbackStatus.classList.add("is-ready");
-      window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const data = new FormData(feedbackForm);
+      const type = String(data.get("type") || "Feedback").trim();
+      const title = String(data.get("subject") || "").trim();
+      const reply = String(data.get("replyEmail") || "").trim();
+      data.append("_subject", `[Haunted Stockfish] ${type}: ${title}`);
+      if (reply) data.append("email", reply);
+      feedbackStatus.textContent = "Sending...";
+      try {
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: data,
+        });
+        if (!response.ok) throw new Error("Send failed");
+        feedbackForm.reset();
+        feedbackStatus.textContent = "Thanks! Your feedback was sent.";
+        feedbackStatus.classList.add("is-ready");
+      } catch {
+        feedbackStatus.textContent = "Something went wrong. Please try again, or email " + (config.supportEmail || "the developer") + ".";
+        feedbackStatus.classList.add("is-error");
+      }
     });
   }
 
