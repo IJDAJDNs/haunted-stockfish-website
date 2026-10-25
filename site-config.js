@@ -1,4 +1,4 @@
-window.SITE_CONFIG = {
+window.HAUNTED_SITE_CONFIG = {
   checkoutUrls: {
     week: "https://buy.stripe.com/test_aFa9AU9T2cSJ66SgPfcIE02",
     month: "https://buy.stripe.com/test_00w28sd5eg4V0My0QhcIE01",
