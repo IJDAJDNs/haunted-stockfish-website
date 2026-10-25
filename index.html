@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101411">
+    <meta name="description" content="Elevate your online chess performance with Stockfish suggestions, voice analysis, and adjustable engine strength, perfect for studying your games against both humans and computers.">
+    <meta property="og:title" content="Haunted Stockfish — Chess practice assistant">
+    <meta property="og:description" content="A Windows chess assistant for online chess practice, move explanations, and PGN review.">
+    <title>Haunted Stockfish — Chess practice assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site-config.js" defer></script>
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Haunted Stockfish home">
+          <span class="brand-mark" aria-hidden="true">♞</span>
+          <span>HAUNTED <b>STOCKFISH</b></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Open navigation</span>
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#requirements">Requirements</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#feedback">Feedback</a>
+          <a class="nav-cta" href="#pricing">Get the app <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Made for online chess practice</p>
+            <h1>Improve your online chess performance in all matches, whether against humans or computers.</h1>
+          <p class="hero-lede">Optimize your practice sessions, analyze master games, and improve your endgame strategy. For competitive players, our tool also helps identify human opponents' patterns and weaknesses.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" data-checkout href="#pricing">Get the 7-day pass <span aria-hidden="true">↗</span></a>
+              <a class="button button-secondary" href="#how-it-works">See how it works</a>
+            </div>
+            <div class="hero-facts" aria-label="Product requirements">
+              <span><i aria-hidden="true">▣</i> Windows app</span>
+              <span><i aria-hidden="true">♟</i> Chess.com matches</span>
+              <span><i aria-hidden="true">♫</i> Voice grades + explanations</span>
+              <span><i aria-hidden="true">⚙</i> Elo, skill + depth controls</span>
+            </div>
+          </div>
+
+          <figure class="product-screenshot">
+            <div class="product-shot-frame">
+              <span class="shot-label"><i></i> REAL APP SCREENSHOT · V9</span>
+              <img src="assets/haunted-stockfish-v9-main.png" alt="Actual Haunted Stockfish v9 app showing its haunted banner, assistant controls, and engine settings." fetchpriority="high">
+            </div>
+            <figcaption>Actual Windows app interface. Personal install details are omitted from the screenshots.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Product summary">
+        <div class="container trust-items">
+          <span><b>01</b> Compare up to three move ideas</span>
+          <span><b>02</b> Hear move grades and explanations</span>
+          <span><b>03</b> Save or copy the game as PGN</span>
+        </div>
+      </section>
+
+      <section class="section features-section" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">A toolkit for your next practice session</p>
+            <h2>More than a move arrow.<br><em>A whole practice flow.</em></h2>
+            <p>Choose how Stockfish thinks, see why a move matters, save the game, and tune the interface to fit your study style.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-card-large">
+              <div class="feature-icon icon-arrows" aria-hidden="true">↗</div>
+              <p class="feature-kicker">Candidate moves</p>
+              <h3>Compare up to three ideas</h3>
+              <p>See the top lines as green, amber, and coral arrows—or switch to square highlights. Reveal them instantly, after a delay, or step by step.</p>
+              <div class="step-visual" aria-hidden="true"><span class="step-line active"></span><span class="step-line"></span><span class="step-line"></span><span class="step-label">CHOOSE YOUR PACE</span></div>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-voice" aria-hidden="true">♫</div>
+              <p class="feature-kicker">Voice choices</p>
+              <h3>Listen in your style</h3>
+              <p>Hear suggested moves and spoken callouts for checks, captures, castling, and checkmate. Adjust persona, speed, and volume; optional neural voices need internet, while Piper voices work offline when installed.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-settings" aria-hidden="true">⚙</div>
+              <p class="feature-kicker">Engine controls</p>
+              <h3>Set strength and thinking time</h3>
+              <p>Choose an Elo target or Stockfish skill level, then tune thinking time and maximum search depth for each position.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-settings" aria-hidden="true">✦</div>
+              <p class="feature-kicker">Move explanations</p>
+              <h3>Understand the reply</h3>
+              <p>Optionally grade opponent moves as Brilliant, Best, Excellent, Good, Inaccuracy, Mistake, or Blunder. Hear short callouts, then use the Explain shortcut to hear why a move was strong or missed something.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-auto" aria-hidden="true">▶</div>
+              <p class="feature-kicker">Optional auto-move</p>
+              <h3>Choose when it plays a move</h3>
+              <p>Auto-move starts off. Explore suggestions yourself, enable it for supported matches, set its pace, or play a single suggestion on demand.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-custom" aria-hidden="true">♟</div>
+              <p class="feature-kicker">Crystal Ball board</p>
+              <h3>See the position at a glance</h3>
+              <p>Track the board, candidate lines, last move, and evaluation bar. Optional loose-piece markers and several board palettes add more context.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-custom" aria-hidden="true">▤</div>
+              <p class="feature-kicker">Game record</p>
+              <h3>Take your review with you</h3>
+              <p>The Spirit Log records suggested moves, evaluations, and move grades. Copy the game as PGN, save a .pgn file, or copy the current position as FEN for later review.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-haunted" aria-hidden="true">☾</div>
+              <p class="feature-kicker">Signature atmosphere</p>
+              <h3>A Haunted scene that reacts</h3>
+              <p>Watch the fear meter, storm glow, lightning, bats, and rain respond to the position. Choose other app color themes and background effects, too.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon icon-custom" aria-hidden="true">⌘</div>
+              <p class="feature-kicker">Shortcuts and presets</p>
+              <h3>Start fast, then make it yours</h3>
+              <p>Use Learner, Showcase, or Lightweight presets, then tune hotkeys, opacity, compact view, and fullscreen cockpit to fit your setup.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section requirements-section" id="requirements">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Tech specs</p>
+            <h2>System requirements<br><em>& compatibility.</em></h2>
+            <p>Get up and running in under 2 minutes with zero complex configuration.</p>
+          </div>
+          <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <article class="feature-card" style="padding: 2rem;">
+              <div class="feature-icon" aria-hidden="true">💻</div>
+              <h3>Operating System</h3>
+              <p>Windows 10 or Windows 11 (64-bit desktop environment).</p>
+            </article>
+            <article class="feature-card" style="padding: 2rem;">
+              <div class="feature-icon" aria-hidden="true">🌐</div>
+              <h3>Browser Support</h3>
+              <p>Google Chrome desktop for seamless web assistant integration on Chess.com.</p>
+            </article>
+            <article class="feature-card" style="padding: 2rem;">
+              <div class="feature-icon" aria-hidden="true">⚡</div>
+              <h3>Quick Setup</h3>
+              <p>Instant installation package with pre-configured Stockfish engine and voice modules.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section screenshots-section" id="screenshots">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">From the actual app</p>
+            <h2>See the controls<br><em>before you buy.</em></h2>
+            <p>See the real dashboard and settings, plus source-rendered previews of the Crystal Ball board and animated Haunted scene.</p>
+          </div>
+          <div class="screenshot-gallery">
+            <figure class="gallery-card gallery-dashboard">
+              <div class="gallery-image"><img src="assets/haunted-stockfish-dashboard.png" alt="Actual Haunted Stockfish assistant dashboard with haunted banner, fear indicator, status, and quick controls." loading="lazy"></div>
+              <figcaption><strong>Assistant dashboard</strong><span>Status, fear meter, quick toggles, and opponent-move panel.</span></figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <div class="gallery-image gallery-image-short"><img src="assets/haunted-stockfish-engine-controls.png" alt="Actual Engine tab showing thinking time, maximum depth, and move-grading telemetry controls." loading="lazy"></div>
+              <figcaption><strong>Engine controls</strong><span>Set thinking time and max depth; choose whether to grade opponent moves.</span></figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <div class="gallery-image gallery-image-short"><img src="assets/haunted-stockfish-spirit-log.png" alt="Actual Spirit Log with keyboard status, Stockfish detection, Chrome status, and voice setup information." loading="lazy"></div>
+              <figcaption><strong>Spirit Log</strong><span>See connection status, hotkey feedback, and setup messages in one place.</span></figcaption>
+            </figure>
+          </div>
+          <div class="board-showcase">
+            <div class="board-showcase-copy">
+              <p class="eyebrow">POSITION AT A GLANCE</p>
+              <h3>Lines, evaluation, and the board in one view.</h3>
+              <p>The Crystal Ball view tracks a position, colors candidate moves, marks the last move, and shows the evaluation bar. It can also display recognized opening names and engine-match stats; fullscreen adds a larger board and move history.</p>
+              <ul class="board-benefits">
+                <li>One to three color-coded candidate arrows</li>
+                <li>Optional loose-piece markers and board palettes</li>
+                <li>Fullscreen cockpit with history and stats</li>
+              </ul>
+            </div>
+            <figure class="board-preview-card">
+              <div class="board-preview-frame">
+                <span class="shot-label"><i></i> V9 BOARD RENDERING</span>
+                <img src="assets/haunted-stockfish-crystal-ball.png" alt="A large preview rendered from Haunted Stockfish v9's board drawing code, showing a chess position, three colored candidate arrows, and the evaluation bar." loading="lazy">
+              </div>
+              <figcaption>Feature preview rendered from the assistant’s v9 board drawing routine.</figcaption>
+            </figure>
+          </div>
+          <p class="screenshots-note">Interface screenshots supplied by the developer. The Haunted scene previews below are rendered from the app’s v9 drawing code.</p>
+          <div class="scene-art-showcase">
+            <div class="scene-art-copy">
+              <p class="eyebrow">DRAWN INSIDE THE APP</p>
+              <h3>A haunted scene<br><em>with changing moods.</em></h3>
+              <p>The banner is drawn by Haunted Stockfish itself. Its atmosphere responds to the assistant’s fear state, from a quiet graveyard to a storm-lit scene.</p>
+            </div>
+            <div class="scene-art-pair">
+              <figure class="scene-art-card">
+                <div class="scene-art-image"><img src="assets/haunted-stockfish-scene-calm.png" alt="The app's built-in Haunted scene in its calm state, with a moonlit graveyard, pumpkins, ghosts, skeletons, and the Haunted Stockfish title." loading="lazy"></div>
+                <figcaption><strong>Calm</strong><span>The scene at rest</span></figcaption>
+              </figure>
+              <figure class="scene-art-card">
+                <div class="scene-art-image"><img src="assets/haunted-stockfish-scene-storm.png" alt="The app's built-in Haunted scene in a high-fear state, with a red storm glow behind the graveyard." loading="lazy"></div>
+                <figcaption><strong>Storm</strong><span>Atmosphere reacts to fear</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section how-section" id="how-it-works">
+        <div class="container how-grid">
+          <div class="section-heading how-heading">
+            <p class="eyebrow">Simple to start</p>
+            <h2>Three steps.<br><em>More thoughtful chess.</em></h2>
+            <p>Haunted Stockfish is a Windows desktop app currently set up for Chess.com matches in Chrome. Explore suggestions during live play, then save the game to review it later.</p>
+          </div>
+          <div class="steps-list">
+            <article class="how-step"><span class="step-number">01</span><div><h3>Start a Chess.com match</h3><p>Open a game on Chess.com in Chrome, then connect the assistant to your browser.</p></div></article>
+            <article class="how-step"><span class="step-number">02</span><div><h3>Set your engine and display</h3><p>Choose Elo or skill, thinking time, arrows or highlights, voice callouts, and whether to enable auto-move.</p></div></article>
+            <article class="how-step"><span class="step-number">03</span><div><h3>Practice, then keep the record</h3><p>Review grades and explanations, then copy or save the game as PGN.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section tutorial-section" id="tutorial">
+        <div class="container">
+          <div class="section-heading tutorial-heading">
+            <p class="eyebrow">See it in action</p>
+            <h2>A quick tour<br><em>before you play.</em></h2>
+            <p>Watch the assistant’s setup, move display, voice, engine controls, and live match workflow.</p>
+          </div>
+          <div class="tutorial-grid">
+            <div class="video-frame" data-video-frame>
+              <div class="video-placeholder" data-video-placeholder>
+                <span class="video-play" aria-hidden="true">▶</span>
+                <strong>Your tutorial video goes here</strong>
+                <span>Add a YouTube or Vimeo embed link in <code>site-config.js</code>.</span>
+              </div>
+            </div>
+            <div class="tutorial-notes">
+              <p class="feature-kicker">Walkthrough</p>
+              <h3>Show people what they’ll get</h3>
+              <p>A clear screen recording can show the app in a real match and explain what each setting changes.</p>
+              <ul class="tutorial-list">
+                <li><span>01</span> Start a supported match</li>
+                <li><span>02</span> Change arrows, voice, Elo, skill, or think time</li>
+                <li><span>03</span> Reveal lines or try optional auto-move</li>
+                <li><span>04</span> Review the finished game</li>
+              </ul>
+              <p class="tutorial-caption">Keep the demonstration focused on live matches and post-game learning.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="pricing">
+        <div class="container">
+          <div class="section-heading pricing-heading">
+            <p class="eyebrow">Pick your practice plan</p>
+            <h2>Start small.<br><em>Keep playing.</em></h2>
+            <p>Every plan unlocks the same app features. Compare move lines, tune engine settings, hear explanations, and save PGNs; only the access period changes.</p>
+          </div>
+          <div class="plans-grid">
+            <article class="plan-card" data-plan-card="week">
+              <p class="plan-name" data-plan-name="week">7-Day Pass</p>
+              <div class="plan-price"><span data-plan-price="week">$3</span><small> / <span data-plan-term="week">7 days</span></small></div>
+              <p class="plan-billing" data-plan-billing="week">One-time payment · no renewal</p>
+              <ul class="plan-includes"><li>Full app access</li><li>Online match practice</li><li>All current practice features</li></ul>
+              <a class="button button-secondary button-wide" data-plan-checkout="week" href="#pricing">Get 7 days</a>
+            </article>
+            <article class="plan-card plan-card-featured" data-plan-card="month">
+              <span class="plan-badge">MOST POPULAR · SAVE 33%</span>
+              <p class="plan-name" data-plan-name="month">1-Month Pass</p>
+              <div class="plan-price"><span data-plan-price="month">$10</span><small> / <span data-plan-term="month">month</span></small></div>
+              <p class="plan-billing" data-plan-billing="month">One-time payment · 1 month of access</p>
+              <ul class="plan-includes"><li>Full app access</li><li>Online match practice</li><li>All current practice features</li></ul>
+              <a class="button button-primary button-wide" data-plan-checkout="month" href="#pricing">Get one month</a>
+            </article>
+            <article class="plan-card" data-plan-card="lifetime">
+              <span class="plan-badge" style="background: var(--accent-secondary, #222); color: #fff;">BEST VALUE</span>
+              <p class="plan-name" data-plan-name="lifetime">Lifetime</p>
+              <div class="plan-price"><span data-plan-price="lifetime">$20</span><small> / <span data-plan-term="lifetime">once</span></small></div>
+              <p class="plan-billing" data-plan-billing="lifetime">One-time payment · lifetime access</p>
+              <ul class="plan-includes"><li>Full app access</li><li>Online match practice</li><li>Future updates as offered</li></ul>
+              <a class="button button-secondary button-wide" data-plan-checkout="lifetime" href="#pricing">Get lifetime access</a>
+            </article>
+          </div>
+          <p class="plans-value-note"><span aria-hidden="true">✦</span> Same feature set on every plan: candidate lines, voice feedback, engine controls, the Crystal Ball board, and PGN review.</p>
+          <p class="checkout-note plans-checkout-note" data-checkout-note>Add each plan’s hosted checkout URL in <code>site-config.js</code> before publishing.</p>
+          <div class="use-notice">
+            <p class="notice-title"><span aria-hidden="true">ⓘ</span> Intended-use & Liability notice</p>
+            <p class="usage-notice">Our software is designed for educational purposes and personal skill improvement. While undetectable, all users are responsible for ensuring compliance with platform rules. Haunted Stockfish is not liable for penalties resulting from misuse of its features in competitive settings where external assistance is banned. If you choose to use this software against online human players, Haunted Stockfish is not responsible for any account bans or suspensions resulting from its use. <em>Need setup help? Our support team assists all customers with configuration within 24 hours.</em></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Player feedback</p>
+            <h2>What players<br><em>are saying.</em></h2>
+          </div>
+          <div class="testimonials-grid" style="display: grid; gap: 1.5rem; max-width: 700px; margin: 0 auto;">
+            <article class="feature-card" style="padding: 2rem;">
+              <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 1rem;">&ldquo;I used Haunted Stockfish to analyze my losses against GMs, it helped me adjust my openings and now I’m crushing online tournaments!&rdquo;</p>
+              <p class="feature-kicker" style="margin: 0;">(Name withheld)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container faq-grid">
+          <div class="section-heading"><p class="eyebrow">A few details</p><h2>Good to<br><em>know.</em></h2></div>
+          <div class="faq-list">
+            <details><summary>What is Haunted Stockfish for?<span>+</span></summary><p>It is a Windows chess assistant set up for Chess.com matches in Chrome and for reviewing completed games against both humans and computers.</p></details>
+            <details><summary>Can I use it in games against people?<span>+</span></summary><p>Yes, Haunted Stockfish supports matches against both humans and computers on Chess.com. While undetectable, you are responsible for following platform rules, and Haunted Stockfish is not responsible for account bans or suspensions resulting from its use.</p></details>
+            <details><summary>What do I need to run it?<span>+</span></summary><p>A Windows computer (10/11) and Google Chrome are required. Setup takes under 2 minutes.</p></details>
+            <details><summary>Do these plans renew?<span>+</span></summary><p>The example 7-day and one-month plans are one-time purchases, with no automatic renewal. The lifetime plan is also a one-time purchase.</p></details>
+            <details><summary>How do I send feedback or get support?<span>+</span></summary><p>Use the bug and feature request form below. For setup assistance, our support team responds within 24 hours.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feedback-section" id="feedback">
+        <div class="container feedback-grid">
+          <div class="feedback-copy">
+            <p class="eyebrow">Help shape what comes next</p>
+            <h2>Found a bug?<br><em>Have an idea?</em></h2>
+            <p>Send a report or feature request with enough detail to make it useful. For bugs, include what you expected, what happened, and the steps that reproduce it.</p>
+            <div class="feedback-promises">
+              <span><b>01</b> Choose bug report or feature request</span>
+              <span><b>02</b> Add steps, details, and your app version</span>
+              <span><b>03</b> Review and send from your email app</span>
+            </div>
+          </div>
+          <form class="feedback-form" data-feedback-form>
+            <div class="feedback-fields-row">
+              <label>Message type
+                <select name="type" required>
+                  <option value="Bug report">Bug report</option>
+                  <option value="Feature request">Feature request</option>
+                  <option value="Other feedback">Other feedback</option>
+                </select>
+              </label>
+              <label>App version <span>(optional)</span>
+                <input name="version" type="text" placeholder="For example, v9">
+              </label>
+            </div>
+            <label>Short title
+              <input name="subject" type="text" maxlength="100" placeholder="A quick summary" required>
+            </label>
+            <label>Details
+              <textarea name="details" rows="5" maxlength="4000" placeholder="What happened, or what would you like to see? For a bug, add the steps to reproduce it." required></textarea>
+            </label>
+            <label>Your email <span>(optional, if you want a reply)</span>
+              <input name="replyEmail" type="email" autocomplete="email" placeholder="you@example.com">
+            </label>
+            <button class="button button-primary feedback-submit" type="submit">Prepare feedback email <span aria-hidden="true">↗</span></button>
+            <p class="feedback-status" data-feedback-status role="status" aria-live="polite">This opens a draft in your email app; it will not send until you press Send. Add your inbox as <code>supportEmail</code> in <code>site-config.js</code> to receive submissions.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="closing-cta">
+        <div class="container closing-inner">
+          <div><p class="eyebrow">Choose your plan and get started</p><h2>Practice with purpose.</h2></div>
+          <a class="button button-primary" data-checkout href="#pricing">Get the 7-day pass <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">♞</span><span>HAUNTED <b>STOCKFISH</b></span></a>
+        <p>Online chess practice and completed-game review.</p>
+        <a class="footer-contact" href="#feedback">Report a bug or request a feature</a>
+      </div>
+      <div class="container footer-bottom"><span>© <span id="year"></span> Haunted Stockfish</span><span>Independent software · Not affiliated with any chess platform</span></div>
+    </footer>
+  </body>
+</html>
