@@ -292,3 +292,17 @@ h1 em, h2 em { color: var(--orange); font-style: normal; }
 .download-section { background: #130b1c; border-top: 1px solid var(--line); }
 .download-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 26px; }
 .download-meta { color: #a893b4; font-size: 11px; }
+
+/* ---- Policy pages (refund, terms, privacy) ---- */
+.policy-page { padding-block: 64px 80px; }
+.policy-page .container { max-width: 780px; }
+.policy-page h1 { margin-bottom: 8px; font-size: clamp(34px, 4vw, 48px); }
+.policy-page h2 { margin: 34px 0 10px; font-size: 22px; }
+.policy-page p, .policy-page li { color: var(--muted); font-size: 15px; line-height: 1.7; }
+.policy-page ul { padding-left: 20px; }
+.policy-page .policy-updated { margin-bottom: 28px; font-size: 12px; }
+.policy-page a { text-decoration: underline; }
+.policy-callout { margin: 20px 0; padding: 16px 18px; border: 1px solid var(--line); border-radius: 10px; background: rgba(255,255,255,.02); }
+.policy-callout p { margin: 0; color: inherit; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.footer-links a { color: #e0d1e8; font-size: 11px; }
